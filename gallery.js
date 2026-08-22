@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const dataScript = document.getElementById("galleryData");
 
   if (galleryContainer && dataScript) {
-    const folder = galleryContainer.getAttribute("data-folder") || "Royal Cable Company";
+    const folder = galleryContainer.getAttribute("data-folder") || "Royal-Cable-Company";
     
     try {
       const images = JSON.parse(dataScript.textContent);

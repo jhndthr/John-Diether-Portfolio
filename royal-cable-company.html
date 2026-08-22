@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Cable Company — John Diether Aquino</title>
+  <meta name="description" content="Social media advertisement compilation and campaign designs created for Royal Cable Company by John Diether Aquino.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient background layers -->
+  <div class="grid-backdrop" aria-hidden="true"></div>
+  <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header scrolled" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html#top" class="logo" aria-label="Back to home">
+        <span class="logo-mark">JD</span>
+        <span class="logo-full">John Diether Aquino</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html#work"><span class="nav-index">01</span>Work</a>
+        <a href="index.html#about"><span class="nav-index">02</span>About</a>
+        <a href="index.html#contact" class="nav-cta">Get in touch</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main>
+    <section class="project-hero">
+      <a href="index.html#work" class="back-btn">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 13L5 8L10 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back to Selected Work
+      </a>
+
+      <p class="eyebrow">( Social Media Campaign )</p>
+      <h1 class="hero-title">Royal Cable Company</h1>
+      <p class="hero-sub">
+        A collection of high-converting social media advertisement creatives designed for Facebook marketing campaigns and user engagement.
+      </p>
+
+      <!-- Meta Details -->
+      <div class="project-meta-grid">
+        <div class="meta-item">
+          <span>Company</span>
+          <strong>Royal Cable Company</strong>
+        </div>
+        <div class="meta-item">
+          <span>Role</span>
+          <strong>Graphic Designer</strong>
+        </div>
+        <div class="meta-item">
+          <span>Tools Used</span>
+          <strong>Photoshop / Illustrator</strong>
+        </div>
+      </div>
+
+      <!-- Gallery Compilation Header -->
+      <div class="section-head" style="margin-bottom: 2rem;">
+        <p class="eyebrow">( Deliverables )</p>
+        <h2>Ad Design Compilation</h2>
+      </div>
+
+      <!-- DYNAMIC GALLERY CONTAINER -->
+      <div class="compilation-grid" id="autoGallery" data-folder="Royal Cable Company"></div>
+
+    </section>
+  </main>
+  <!-- DATA LIST OF IMAGES -->
+  <script id="galleryData" type="application/json">
+    [
+      "Design1.jpg",
+      "Design2.jpg",
+      "Design3.jpg",
+      "Design4.jpg",
+      "Design5.jpg",
+      "Design6.jpg"
+    ]
+  </script>
+
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
+  <script src="gallery.js"></script>
+
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <span>© 2026 John Diether Aquino. Based in the Philippines.</span>
+    <a href="index.html#work" class="back-top">← Back to Portfolio</a>
+  </footer>
+</body>
+</html>

@@ -736,9 +736,16 @@ section {
     radial-gradient(circle at 70% 80%, hsl(225 80% 40% / 0.45), transparent 55%),
     linear-gradient(160deg, #0a1224, #020306);
 }
+.about-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  inset: 0;
+}
 
 .about-portrait::after {
-  content: "JDC";
   position: absolute;
   inset: 0;
   display: flex;
@@ -1093,4 +1100,59 @@ section {
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid var(--line-soft);
+}
+.lightbox-overlay {
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.lightbox-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-overlay img {
+  max-width: 90%;
+  max-height: 85%;
+  border-radius: 6px;
+  transform: scale(0.9);
+  transition: transform 0.4s ease;
+}
+
+.lightbox-overlay.active img {
+  transform: scale(1);
+}
+
+.lightbox-close {
+  position: absolute; top: 20px; right: 30px;
+  font-size: 40px; color: #fff; background: none; border: none; cursor: pointer;
+}
+
+.lightbox-nav {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  font-size: 40px; color: #fff; background: rgba(0,0,0,0.4);
+  border: none; cursor: pointer; padding: 10px 15px; border-radius: 4px;
+}
+
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }
+
+.lightbox-counter {
+  position: absolute; bottom: 20px; color: #ccc; font-size: 14px;
+}
+
+body.lightbox-open .compilation-grid,
+body.lightbox-open header,
+body.lightbox-open main > *:not(#lightbox) {
+  filter: blur(6px);
+  transition: filter 0.3s ease;
 }

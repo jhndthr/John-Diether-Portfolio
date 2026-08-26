@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="porfolio-modal.css">
 </head>
 <body>
 
@@ -185,78 +186,162 @@
     </div>
   </div>
 </a>
+<article
+  class="work-card reveal size-lg"
+  style="--hue:214; --ratio:4/5;"
+  data-portfolio-open="foodPortfolio"
+  tabindex="0"
+  role="button"
+  aria-label="Open Food and Cafe Brand Promotions portfolio"
+>
 
-<!--
-      <article class="work-card reveal" style="--hue:225; --ratio:1/1;">
-        <div class="card-media">
-          <div class="card-tag">
-            <span class="tag-id">IMG_03</span>
-            <span class="tag-dim">1600 × 1600</span>
-          </div>
-          <div class="card-canvas"></div>
-        </div>
-        <div class="card-info">
-          <h3>Bughaw Records</h3>
-          <p>Album art and merch for an independent electronic label.</p>
-          <div class="card-meta">
-            <span>Art Direction</span><span>Merch</span>
-          </div>
-        </div>
-      </article>
+  <div class="card-media">
 
-      <article class="work-card reveal size-lg" style="--hue:210; --ratio:21/9;">
-        <div class="card-media">
-          <div class="card-tag">
-            <span class="tag-id">IMG_04</span>
-            <span class="tag-dim">3200 × 1800</span>
-          </div>
-          <div class="card-canvas"></div>
-        </div>
-        <div class="card-info">
-          <h3>Ilog Studio — Website</h3>
-          <p>Digital identity and site design for an architecture studio.</p>
-          <div class="card-meta">
-            <span>Web Design</span><span>UI</span>
-          </div>
-        </div>
-      </article>
+    <div class="card-tag">
+      <span class="tag-id">Food & Cafe Brand Promotions</span>
+      <span class="tag-dim">2400 × 3000</span>
+    </div>
 
-      <article class="work-card reveal" style="--hue:195; --ratio:3/4;">
-        <div class="card-media">
-          <div class="card-tag">
-            <span class="tag-id">IMG_05</span>
-            <span class="tag-dim">2100 × 2600</span>
-          </div>
-          <div class="card-canvas"></div>
-        </div>
-        <div class="card-info">
-          <h3>Tag-ulan Festival</h3>
-          <p>Poster series and wayfinding for an annual music festival.</p>
-          <div class="card-meta">
-            <span>Poster</span><span>Environmental</span>
-          </div>
-        </div>
-      </article>
+    <div class="card-carousel" data-carousel>
 
-      <article class="work-card reveal" style="--hue:230; --ratio:1/1;">
-        <div class="card-media">
-          <div class="card-tag">
-            <span class="tag-id">IMG_06</span>
-            <span class="tag-dim">2400 × 2400</span>
-          </div>
-          <div class="card-canvas"></div>
-        </div>
-        <div class="card-info">
-          <h3>Panday App</h3>
-          <p>App icon and UI kit for a fintech startup built for freelancers.</p>
-          <div class="card-meta">
-            <span>UI/UX</span><span>Branding</span>
+      <div class="carousel-track">
+
+        <div class="carousel-slide">
+          <div class="card-canvas">
+            <img
+              src="Streetwear-Brand/OX2.jpg"
+              alt="OX2"
+            >
           </div>
         </div>
-      </article>
+
+        <div class="carousel-slide">
+          <div class="card-canvas">
+            <img
+              src="Streetwear-Brand/OX3.jpg"
+              alt="OX3"
+            >
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <div class="card-canvas">
+            <img
+              src="Streetwear-Brand/OX4.jpg"
+              alt="OX4"
+            >
+          </div>
+        </div>
+
+      </div>
+
+      <button
+        type="button"
+        class="carousel-arrow prev"
+        data-carousel-prev
+        aria-label="Previous image"
+      >
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path
+            d="M10 3 5 8l5 5"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+
+      <button
+        type="button"
+        class="carousel-arrow next"
+        data-carousel-next
+        aria-label="Next image"
+      >
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path
+            d="M6 3l5 5-5 5"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+
+      <div class="carousel-dots" data-carousel-dots></div>
 
     </div>
-    -->
+
+  </div>
+
+
+  <div class="card-info">
+
+    <h3>Food & Cafe Brand Promotions</h3>
+
+    <p>
+      Crafting Visual Campaigns that Drive Cravings & Sales
+    </p>
+
+    <div class="card-meta">
+      <span>Marketing Advertisement</span>
+    </div>
+
+  </div>
+
+</article>
+<div
+  class="portfolio-modal"
+  id="foodPortfolio"
+  aria-hidden="true"
+>
+
+  <div
+    class="portfolio-backdrop"
+    data-portfolio-close
+  ></div>
+  
+  <div class="portfolio-scroll">
+
+    <div class="portfolio-images">
+
+      <img
+        src="Streetwear-Brand/OX1.jpg"
+        alt="Food and Cafe Advertisement 1"
+      >
+
+      <img
+        src="Streetwear-Brand/OX2.jpg"
+        alt="Food and Cafe Advertisement 2"
+      >
+
+      <img
+        src="Streetwear-Brand/OX3.jpg"
+        alt="Food and Cafe Advertisement 3"
+      >
+       <img
+        src="Streetwear-Brand/OX4.jpg"
+        alt="Food and Cafe Advertisement 3"
+      >
+      <img
+        src="Streetwear-Brand/OX5.jpg"
+        alt="Food and Cafe Advertisement 3"
+      >
+      <img
+        src="Streetwear-Brand/OX6.jpg"
+        alt="Food and Cafe Advertisement 3"
+      >
+
+
+      <!-- dagdagan mo lang kung marami pa -->
+
+    </div>
+
+  </div>
+
+</div>
+
   </section>
 
   <!-- ============ ABOUT ============ -->
@@ -372,5 +457,6 @@
 </footer>
 
 <script src="script.js"></script>
+<script src="portfolio-modal.js"></script>
 </body>
 </html>
